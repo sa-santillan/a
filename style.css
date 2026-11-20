@@ -297,4 +297,40 @@ button:hover {
     nav a {
         font-size: 9px;
     }
+
+    /* Creator photo */
+.creator-photo {
+    width: 100%;
+    max-width: 280px;
+    margin: 25px 0;
+    padding: 5px;
+    background: #10121f;
+    border: 1px solid #00e1ff;
+    border-top: 3px solid #ffe600;
+    box-shadow:
+        0 0 15px #00e1ff33,
+        6px 6px 0 #ff2b75;
+    clip-path: polygon(
+        0 0,
+        94% 0,
+        100% 6%,
+        100% 100%,
+        6% 100%,
+        0 94%
+    );
+}
+
+.creator-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #525775;
+    filter: saturate(0.9);
+    transition: 0.3s;
+}
+
+.creator-photo img:hover {
+    filter: saturate(1.2);
+    box-shadow: 0 0 15px #00e1ff55;
+}
 }
